@@ -97,13 +97,29 @@ git clone https://github.com/aowasiu/simple_laravel_microservice
 ```
 
 
-> Install the depenedencies by running this command in terminal:
+> If you check your terminal, your location will be at "C:\xampp\htdocs". Before installing the depenedencies for each folder, first, change into:
+```
+cd C:\xampp\htdocs\simple_laravel_microservice\talentplus_frontend
+```
+
+Install the dependencies for this folder by running this command in terminal:
+```
+composer install
+```
+
+Change into the second folder by running the command:
+```
+cd C:\xampp\htdocs\simple_laravel_microservice\talentplus_backend
+
+```
+
+Run the command for installing dependencies for this folder too:
 ```
 composer install
 ```
 
 
-> Remember to change your database settings in "simple_laravel_microservice/.env" to the web server's settings. This is not mandatory, though. You can use whatever setting appeals to you.
+> Remember to change your database settings in "simple_laravel_microservice/.env" to the web server's settings. This is not mandatory, though. You can use whatever setting appeals to you. As long as the settings match your XAMPP installation's.
 
 ```
 DB_DATABASE=simple_laravel_microservice
@@ -120,7 +136,7 @@ php artisan migrate
 
 ## Seeding the database
 
-> If you check your terminal, your location will be at "C:\xampp\htdocs". You should change into the clone application's folder for housing the seeding logic. That is, "talentplus_backend". So change into the following location:
+> You should change into the clone application's folder for housing the seeding logic. That is, "talentplus_backend". So change into the following location:
 cd C:\xampp\htdocs\simple_laravel_microservice\talentplus_backend
 
 
